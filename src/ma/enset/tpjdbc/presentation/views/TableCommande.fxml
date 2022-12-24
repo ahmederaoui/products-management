@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.*?>
+
+<TableView prefHeight="241.0" prefWidth="600.0" fx:id="tableCm"
+           fx:controller="ma.enset.tpjdbc.presentation.controllers.MainController" xmlns:fx="http://javafx.com/fxml/1">
+    <columns>
+        <TableColumn fx:id="colC" prefWidth="138.0" text="Client" />
+        <TableColumn fx:id="colP" prefWidth="161.0" text="Produit" />
+        <TableColumn fx:id="colPrix" prefWidth="114.0" text="Prix" />
+        <TableColumn fx:id="colQua" prefWidth="97.0" text="Quantie" />
+        <TableColumn fx:id="colTotal" prefWidth="89.0" text="Total" />
+    </columns>
+</TableView>

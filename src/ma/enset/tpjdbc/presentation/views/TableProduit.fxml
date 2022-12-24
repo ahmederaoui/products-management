@@ -8,11 +8,13 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 
-<TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-    <columns>
-        <TableColumn prefWidth="138.0" text="Nom" />
-        <TableColumn prefWidth="267.0" text="Description" />
-        <TableColumn minWidth="0.0" prefWidth="97.0" text="Prix" />
-        <TableColumn prefWidth="97.0" text="Quantite" />
-    </columns>
+
+<TableView fx:id="tableP" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER"
+           fx:controller="ma.enset.tpjdbc.presentation.controllers.MainController" xmlns:fx="http://javafx.com/fxml/1">
+<columns>
+    <TableColumn fx:id="colNom" prefWidth="138.0" text="Nom" />
+    <TableColumn fx:id="colDes" prefWidth="267.0" text="Description" />
+    <TableColumn fx:id="colPrix" minWidth="0.0" prefWidth="97.0" text="Prix" />
+    <TableColumn fx:id="colQua" prefWidth="97.0" text="Quantite" />
+</columns>
 </TableView>

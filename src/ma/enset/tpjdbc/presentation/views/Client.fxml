@@ -68,22 +68,22 @@ fx:controller="ma.enset.tpjdbc.presentation.controllers.ClientController">
                         <Insets left="50.0" />
                      </GridPane.margin>
                   </Label>
-                  <TextField GridPane.columnIndex="1">
+                  <TextField fx:id="nom" GridPane.columnIndex="1">
                      <GridPane.margin>
                         <Insets left="5.0" right="10.0" />
                      </GridPane.margin>
                   </TextField>
-                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <TextField fx:id="prenom" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <GridPane.margin>
                         <Insets left="5.0" right="10.0" />
                      </GridPane.margin>
                   </TextField>
-                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="2">
+                  <TextField fx:id="email" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <GridPane.margin>
                         <Insets left="5.0" right="10.0" />
                      </GridPane.margin>
                   </TextField>
-                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="3">
+                  <TextField fx:id="tele" GridPane.columnIndex="1" GridPane.rowIndex="3">
                      <GridPane.margin>
                         <Insets left="5.0" right="10.0" />
                      </GridPane.margin>
@@ -135,6 +135,13 @@ fx:controller="ma.enset.tpjdbc.presentation.controllers.ClientController">
       </VBox>
    </top>
    <center>
-      <fx:include source="TableClient.fxml"></fx:include>
+      <TableView fx:id="tableC" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <columns>
+            <TableColumn fx:id="colNom" prefWidth="97.0" text="Nom" />
+            <TableColumn fx:id="colPrenom" prefWidth="119.0" text="Prenom" />
+            <TableColumn fx:id="colemail" minWidth="0.0" prefWidth="208.0" text="Email" />
+            <TableColumn fx:id="colTele" prefWidth="175.0" text="Tele" />
+         </columns>
+      </TableView>
    </center>
 </BorderPane>
