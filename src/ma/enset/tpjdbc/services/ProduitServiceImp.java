@@ -35,6 +35,7 @@ public class ProduitServiceImp implements ProduitService{
 
         try{
             return pDao.findAll();
+
         }catch (Exception e){
             e.printStackTrace();
             return  null;

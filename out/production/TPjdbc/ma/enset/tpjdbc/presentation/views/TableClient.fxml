@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="tableC" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER"
+           fx:controller="ma.enset.tpjdbc.presentation.controllers.MainController" xmlns:fx="http://javafx.com/fxml/1">
+    <columns>
+        <TableColumn fx:id="colNom" prefWidth="97.0" text="Nom" />
+        <TableColumn fx:id="colPrenom" prefWidth="119.0" text="Prenom" />
+        <TableColumn fx:id="colemail" minWidth="0.0" prefWidth="208.0" text="Email" />
+        <TableColumn fx:id="colTele" prefWidth="175.0" text="Tele" />
+    </columns>
+</TableView>
